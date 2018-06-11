@@ -1,0 +1,116 @@
+<html>
+<title>
+Soccer Squad Builder
+</title>
+<head>
+    <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="SquadBuilder.css">
+</head>
+
+<body>
+<h1><center>You can build your own squad from some of the best players in the world.</center></h1>
+
+
+  <canvas id = "c1" width = "500" height = "500">
+  </canvas>
+<div ><p>LW</p>
+    <select id = "LW">
+      <option id = "Ronaldo" value="Ronaldo">Ronaldo</option>
+      <option id = "Neymar" value="Neymar">Neymar</option>
+    </select>
+</div>
+<br>
+<div ><p>ST</p>
+    <select id = "ST">
+      <option id = "Suarez" value="Suarez">Suarez</option>
+      <option id = "Lewandowsi" value="Lewandowsi">Lewandowsi</option>
+    </select>
+</div>
+<br>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<div ><p>RW</p>
+    <select id = "RW">
+      <option id = "Messi" value="Messi">Messi</option>
+      <option id = "Salah" value="Salah">Salah</option>
+    </select>
+</div>
+<br>
+<div ><p>LCM</p>
+    <select id = "LCM">
+      <option id = "Coutinho" value="Coutinho">Coutinho</option>
+      <option id = "Modric" value="Modric">Modric</option>
+    </select>
+</div>
+<br>
+<div ><p>CM</p>
+    <select id = "CM">
+      <option id = "Pogba" value="Pogba">Pogba</option>
+      <option id = "Kroos" value="Kroos">Kroos</option>
+    </select>
+</div>
+<br>
+<div ><p>RCM</p>
+    <select id = "RCM">
+      <option id = "Isco" value="Isco">Isco</option>
+      <option id = "De Bruyne" value="De Bruyne">De Bruyne</option>
+    </select>
+</div>
+<br>
+<div ><p>LB</p>
+    <select id = "LB">
+      <option id = "Marcelo" value="Marcelo">Marcelo</option>
+      <option id = "Alba" value="Alba">Alba</option>
+    </select>
+</div>
+<br>
+<div ><p>LCB</p>
+    <select id = "LCB">
+      <option id = "Ramos" value="Ramos">Ramos</option>
+      <option id = "Pique" value="Pique">Pique</option>
+    </select>
+</div>
+<br>
+<div ><p>RCB</p>
+    <select id = "RCB">
+      <option id = "Silva" value="Silva">Ramos</option>
+      <option id = "Terry" value="Terry">Terry</option>
+    </select>
+</div>
+<br>
+<div ><p>RB</p>
+    <select id = "RB">
+      <option id = "Alves" value="Alves">Alves</option>
+      <option id = "Carvajal" value="Carvajal">Carvajal</option>
+    </select>
+</div>
+<br>
+<div ><p>GK</p>
+    <select id = "GK">
+      <option id = "De Gea" value="De Gea">De Gea</option>
+      <option id = "Karius" value="Karius">Karius</option>
+    </select>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAQKjmREQHXt7iSjywdzwrK6LUDmBGfpyw",
+    authDomain: "soccer-squad-builder.firebaseapp.com",
+    databaseURL: "https://soccer-squad-builder.firebaseio.com",
+    projectId: "soccer-squad-builder",
+    storageBucket: "soccer-squad-builder.appspot.com",
+    messagingSenderId: "761482849928"
+  };
+  firebase.initializeApp(config);
+</script>
+<br>
+<br>
+<button id = "GS">Generate Squad</button>
+<script src="SquadBuilder.js"></script>
+
+</body>
+</html>
